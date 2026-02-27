@@ -105,7 +105,7 @@ const DashboardPage = () => {
     <div className="space-y-8 animate-in fade-in duration-500">
       <header className="mb-2">
         <h1 className="text-3xl font-bold text-primary tracking-tight">{getGreeting()}, {user?.name || 'Kawan'}! 👋</h1>
-        <p className="text-primary/60 mt-1">Pantau arus kas Anda dalam sekali tatap hari ini</p>
+        <p className="text-primary/60 mt-1">Pantau arus kas Anda dalam sekali tatap hari ini coya coya</p>
       </header>
 
       {/* Summary Cards */}
