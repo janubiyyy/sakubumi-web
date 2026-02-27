@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-accent-brown font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* Reusable Earth Tone Components */
+  .btn-primary {
+    @apply bg-primary text-cream hover:bg-primary-dark transition-all duration-300 font-medium rounded-xl px-6 py-3 shadow-soft active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-cream text-primary border border-primary/20 hover:bg-cream-dark transition-all duration-300 font-medium rounded-xl px-6 py-3 shadow-sm active:scale-95;
+  }
+  
+  .btn-sage {
+    @apply bg-sage text-white hover:bg-sage-dark transition-all duration-300 font-medium rounded-xl px-6 py-3 shadow-soft active:scale-95;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-cream/50 overflow-hidden;
+  }
+  
+  .input-field {
+    @apply w-full rounded-xl border border-cream-dark bg-white px-4 py-3 text-sm text-accent-brown outline-none transition-all focus:border-primary focus:ring-2 focus:ring-primary/20 placeholder:text-primary/40;
+  }
+  
+  .label-text {
+    @apply block text-sm font-medium text-primary mb-1.5;
+  }
+}
