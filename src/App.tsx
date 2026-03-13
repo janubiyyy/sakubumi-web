@@ -7,6 +7,7 @@ import TransactionPage from './pages/TransactionPage';
 import CategoryPage from './pages/CategoryPage';
 import ReportPage from './pages/ReportPage';
 import ProfilePage from './pages/ProfilePage';
+import PrivacyPage from './pages/PrivacyPage';
 import DashboardLayout from './layouts/DashboardLayout';
 import { Toaster } from 'react-hot-toast';
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
 
         {/* Protected Dashboard Routes (Nanti akan ditambah guard auth) */}
         <Route path="/dashboard" element={<DashboardLayout />}>
